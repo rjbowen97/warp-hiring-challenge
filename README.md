@@ -6,3 +6,18 @@ This is a programming challenge for candidates who are interested in applying to
 Participation in the challenge is optional. You can still submit an application without doing the hiring challenge.
 
 Get started by reading the [challenge description](mission_challenge.md). Good luck!
+
+## Scripted Analysis
+If you want a reusable command instead of typing the awk pipeline each time, run:
+
+```bash
+./scripts/find_longest_mission.sh
+```
+
+By default it analyzes `space_missions.log` for the longest `Completed` mission to `Mars` and prints the security code.
+
+You can also override the inputs:
+
+```bash
+./scripts/find_longest_mission.sh --log-file space_missions.log --destination Mars --status Completed --details
+```
